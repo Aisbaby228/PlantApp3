@@ -1,0 +1,36 @@
+name: rayshardenov_s_devochki2
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=3.3.2 <4.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  calendar_date_picker2: ^0.5.3
+  provider: ^6.0.5
+  slide_countdown: ^0.3.4
+  intl: ^0.18.0
+  table_calendar: ^3.0.9
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRomanRegular.ttf
+          weight: 400
+        - asset: assets/fonts/RobotoRomanMedium.ttf
+          weight: 500
+    - family: Inter
+      fonts: 
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
