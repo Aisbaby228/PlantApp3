@@ -88,7 +88,7 @@ class DayPage extends StatelessWidget {
               right: 87.h,
             ),
             child: Text(
-              "School:",
+              "Day:",
               style: CustomTextStyles.displayMediumMedium,
             ),
           ),

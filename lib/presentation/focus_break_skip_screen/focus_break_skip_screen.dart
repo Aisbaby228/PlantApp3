@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:rayshardenov_s_devochki2/presentation/month_march_screen/month_march_screen.dart';
@@ -9,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:rayshardenov_s_devochki2/core/app_export.dart';
 import 'package:slide_countdown/slide_countdown.dart';
 
+
+
 class FocusBreakSkipScreen extends StatelessWidget {
   const FocusBreakSkipScreen({Key? key})
       : super(
@@ -18,6 +22,7 @@ class FocusBreakSkipScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       
       body: SizedBox(
@@ -59,7 +64,7 @@ class FocusBreakSkipScreen extends StatelessWidget {
                     slideDirection: SlideDirection.up,
                     textStyle:TextStyle(
                       color: Colors.black,
-                      fontSize: 30,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -115,6 +120,9 @@ class FocusBreakSkipScreen extends StatelessWidget {
                 CustomElevatedButton(
                   width: 100.h,
                   text: "Skip",
+                  onPressed: (){
+                    
+                  },
                   margin: EdgeInsets.only(left: 35.h),
                   buttonStyle: CustomButtonStyles.fillRed,
                 ),

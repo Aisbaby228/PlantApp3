@@ -1,9 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rayshardenov_s_devochki2/core/app_export.dart';
 import 'package:rayshardenov_s_devochki2/presentation/Schedule_lists/schedule_list.dart';
+import 'package:rayshardenov_s_devochki2/presentation/focus_break_skip_screen/focus_break_skip_screen.dart';
 import 'package:rayshardenov_s_devochki2/presentation/my_lists_screen/Shopping%20lists/Shopping_lists.dart';
 import 'package:rayshardenov_s_devochki2/presentation/my_lists_screen/movie_lists/movie_lists.dart';
 import 'package:rayshardenov_s_devochki2/presentation/my_lists_screen/my_list2.dart';
+import 'package:rayshardenov_s_devochki2/presentation/stats_monthly_march_screen/stats_monthly_march_screen.dart';
 
 class MyListsScreen extends StatelessWidget {
   const MyListsScreen({Key? key})
@@ -212,21 +215,64 @@ class MyListsScreen extends StatelessWidget {
               ),
             ),
           ),
-          CustomImageView(
-            imagePath: ImageConstant.imgGroup97Green400,
-            height: 33.v,
-            width: 243.h,
-            alignment: Alignment.bottomCenter,
-            margin: EdgeInsets.only(bottom: 49.v),
+          
+          
+          SizedBox(        
+   height: 190.v,
+   width: 270.h,
+         child: IconButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => MyListsScreen()));
+                    },
+                    icon: const Icon(
+                      CupertinoIcons.circle_righthalf_fill,
+                      
+                      color: Colors.grey,
+                     
+                    ),
+                    alignment: Alignment.bottomLeft,
+                     padding: EdgeInsets.only(bottom: 49.v),
+                     
+                  ),
+          ),
+           SizedBox(        
+   height: 190.v,
+   width: 270.h,
+         child: IconButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => StatsMonthlyMarchScreen()));
+                    },
+                    icon: const Icon(
+                      CupertinoIcons.doc,
+                      
+                      color: Colors.grey,
+                     
+                    ),
+                    alignment: Alignment.bottomRight,
+                     padding: EdgeInsets.only(bottom: 49.v),
+                     
+                  ),
           ),
           CustomImageView(
-            imagePath: ImageConstant.imgPlay,
+            imagePath: ImageConstant.imgTree081,
             height: 86.v,
             width: 70.h,
             alignment: Alignment.topCenter,
+            onTap: () { 
+                                  Navigator.push( 
+                                      context, 
+                                      MaterialPageRoute( 
+                                          builder: (context) => FocusBreakSkipScreen())); 
+                                }, 
           ),
+         
         ],
       ),
     );
+        
+      
+    
   }
 }

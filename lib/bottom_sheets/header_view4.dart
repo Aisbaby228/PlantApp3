@@ -28,14 +28,7 @@ class HeaderView4 extends StatelessWidget {
                       flex: 1,
                       child: Align(
                         alignment: Alignment.bottomLeft,
-                        child: FittedBox(
-                          fit: BoxFit.fitHeight,
-                          child: Text(" All,",
-                              style: TextStyle(
-                                  fontSize: 23,
-                                  fontWeight: FontWeight.w400,
-                                  color: viewModel.clrLvl4)),
-                        ),
+                        
                       ),
                     ),
                     Expanded(
